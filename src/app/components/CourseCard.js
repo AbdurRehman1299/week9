@@ -6,7 +6,7 @@ function CourseCard({ imageSrc, title, date, location }) {
     <div className='bg-gray-300 min-h-screen'>
         <div className='w-full h-[130px] bg-gradient-to-r from-teal-200 to-teal-500'>
             <h1 className='text-center text-white text-3xl p-8'>{title}</h1>
-            <div className='flex flex-2 items-center w-[580px] h-[200px] bg-[#324254] m-auto rounded-md md:flex-row'>
+            <div className='flex flex-2 items-center w-[580px] h-[200px] bg-[#324254] m-auto rounded-md'>
                 <div className='h-full flex items-center'>
                     <img 
                         src={imageSrc}
