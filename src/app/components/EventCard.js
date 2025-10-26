@@ -1,4 +1,6 @@
-function EventCard({ imageSrc, title, date, location }){
+import Link from "next/link";
+
+function EventCard({ id, imageSrc, title, date, location }){
   return (
     <div className="flex items-center justify-between p-4 mb-4 bg-white rounded-lg shadow-md border-b border-gray-100">
       <div className="w-1/4 h-36 mr-6 overflow-hidden rounded-md">
@@ -15,11 +17,11 @@ function EventCard({ imageSrc, title, date, location }){
         <p className="text-base text-gray-500">{location}</p>
       </div>
 
-      <button className="flex items-center justify-center 
+      <Link href={`/courses/${id}`} className="flex items-center justify-center 
                    bg-green-500 text-white font-medium py-2 px-4 rounded-md"
       >
         Explore Event &rarr;
-      </button>
+      </Link>
     </div>
   );
 };

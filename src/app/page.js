@@ -18,13 +18,6 @@ function Page() {
           <FaClipboardList className='text-5xl'/>
           <p className='text-[20px]'>Courses List</p>
         </Link>
-
-        <Link href='/courses/programming-for-everyone' className='justify-center items-center 
-                                        w-[185px] h-[185px] text-[15px] border-2
-                                      border-gray-500 rounded-md gap-4' >
-          <img className='w-full h-[105px]' src='/program1.avif'/>
-          <p className='text-[20px] mt-[5px] text-center'>Programming For EveryOne</p>
-        </Link>
       </div>
     </div>
   )
